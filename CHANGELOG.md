@@ -4,6 +4,17 @@ All notable Brand Soul changes are documented here. Versions follow Semantic Ver
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-09-01
+
+### Changed
+
+- Existing-brand discovery now finds social profiles and other public sources from the website and public search before asking the founder for links.
+- Source inventories are presented for confirmation or correction instead of being reconstructed manually by the founder.
+- Initial founder interviews are limited to five identity-critical questions, with clarifications consuming the same budget.
+- Brand Soul Build now records documentation gaps without turning automatically into an exhaustive claim audit.
+- Sufficient answers close a topic; unresolved proof and operational details move to governance issues.
+- Draft synthesis happens after the initial interview budget, with additional passes requiring the founder to opt in.
+
 ## [1.1.0] - 2026-09-01
 
 ### Added
@@ -27,6 +38,7 @@ All notable Brand Soul changes are documented here. Versions follow Semantic Ver
 - Made existing-brand discovery source-first, beginning with the primary website.
 - Prohibited inferring brand maturity from an empty workspace or missing repository.
 
-[Unreleased]: https://github.com/CacaoWebStudio/brand-soul/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/CacaoWebStudio/brand-soul/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/CacaoWebStudio/brand-soul/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/CacaoWebStudio/brand-soul/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/CacaoWebStudio/brand-soul/releases/tag/v1.0.1
