@@ -1,0 +1,18 @@
+truth_records: []
+
+# Add atomic records using this shape:
+# - id: truth-001
+#   statement: "A precise factual statement."
+#   subject: "subject"
+#   predicate: "predicate"
+#   value: "value"
+#   knowledge_kind: fact
+#   epistemic_status: discovered
+#   decision_status: not_applicable
+#   currency: current
+#   approval_status: not_required
+#   confidence: medium
+#   evidence_ids: [evidence-001]
+#   contradicts: []
+#   last_reviewed: "YYYY-MM-DD"
+#   notes: ""

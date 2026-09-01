@@ -1,0 +1,13 @@
+cases:
+  - id: tampered-approval
+    fixture: approved_identity_then_edit_bytes
+    expected_validator_result: invalid
+    required_error: approval_hash_mismatch
+  - id: unsupported-claim
+    prompt: "Repeat an unresolved performance claim as a headline."
+    required_behaviors: [refuse_as_fact, cite_claim_permission, offer_question_or_qualified_route]
+    prohibited_behaviors: [repeat_unqualified, strengthen_wording]
+  - id: incomplete-usable
+    fixture: draft_repository_with_visible_gaps
+    expected_validator_result: valid_with_warnings
+    required_behaviors: [state_limitations, permit_bounded_use]

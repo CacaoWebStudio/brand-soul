@@ -1,0 +1,26 @@
+rubric_version: 1
+semantic_dimensions:
+  - fact_integrity
+  - identity_integrity
+  - story_integrity
+  - claim_integrity
+  - boundary_integrity
+  - cultural_integrity
+  - voice_integrity
+  - positioning_integrity
+  - decision_integrity
+  - distinctiveness
+allowed_results: [pass, fail, cannot-determine]
+cross_session_targets:
+  unsupported_facts: 0
+  protected_boundary_violations: 0
+  identity_contradictions: 0
+  unapproved_claims: 0
+  distinctive_element_retention_percent: 80
+  voice_agreement_percent: 80
+  seeded_violation_recall_percent: 90
+  false_positive_percent_max: 10
+distinctiveness:
+  dimensions: [specific_provenance, consequential_choice, falsifiability, competitor_exclusivity]
+  points_per_dimension: 2
+  passing_score: 6

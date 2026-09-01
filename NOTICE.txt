@@ -1,0 +1,7 @@
+Brand Soul — an open-source framework created by Cacao Web Studio
+Copyright 2026 Cacao Web Studio
+
+Brand Soul was created and is maintained by Cacao Web Studio.
+
+Official project: https://github.com/CacaoWebStudio/brand-soul
+Cacao Web Studio: https://cacaowebstudio.com

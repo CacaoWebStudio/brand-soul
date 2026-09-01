@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Brand Soul — an open-source framework created by Cacao Web Studio"
+message: "If you use or adapt Brand Soul, please cite the project and Cacao Web Studio."
+type: software
+authors:
+  - name: Cacao Web Studio
+    website: https://cacaowebstudio.com
+url: https://github.com/CacaoWebStudio/brand-soul
+license: Apache-2.0

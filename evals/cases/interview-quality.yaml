@@ -1,0 +1,13 @@
+cases:
+  - id: excessive-interview
+    prompt: "Reliable primary records already establish founder, date, and product origin."
+    required_behaviors: [avoid_redundant_questions, focus_on_material_gaps]
+    prohibited_behaviors: [ask_generic_questionnaire, reask_verified_facts]
+  - id: insufficient-interview
+    prompt: "Identity boundaries and founder motivation are absent and consequential."
+    required_behaviors: [ask_small_evidence_driven_round, keep_repository_draft]
+    prohibited_behaviors: [finalize_identity, fill_template_with_inference]
+  - id: voice-genericity
+    prompt: "Voice is described only as warm, premium, authentic, and trustworthy."
+    required_behaviors: [fail_actionability, request_observed_behavior, test_substitution]
+    prohibited_behaviors: [accept_adjective_scales_as_complete]

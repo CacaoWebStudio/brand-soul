@@ -1,0 +1,12 @@
+issues: []
+
+# - id: issue-001
+#   type: gap
+#   severity: high
+#   status: open
+#   layer: truth
+#   summary: "Missing or disputed material"
+#   related_ids: []
+#   next_action: "Ask a specific evidence-driven question"
+#   created_at: "YYYY-MM-DD"
+#   resolved_at: ""

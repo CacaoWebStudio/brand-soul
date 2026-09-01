@@ -1,0 +1,28 @@
+contract_version: 1
+brand:
+  id: "{{BRAND_ID}}"
+  name: "{{BRAND_NAME}}"
+repository_status: draft
+brand_state:
+  maturity: new
+  evidence_coverage: sparse
+  identity_coherence: undefined
+canonical_files:
+  truth: truth.yaml
+  identity: identity.md
+  voice: voice.md
+  strategy: strategy.md
+governance_files:
+  claims: governance/claims.yaml
+  issues: governance/issues.yaml
+  evidence: governance/evidence.yaml
+protected_files:
+  identity.md:
+    approval: pending_founder
+    approved_by: ""
+    approved_at: ""
+    sha256: ""
+consumer_rules:
+  unresolved_claims: prohibit_as_fact
+  proposed_identity: prohibit_as_canonical
+  outdated_strategy: exclude

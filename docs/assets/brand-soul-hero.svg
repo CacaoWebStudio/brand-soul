@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Brand Soul by Cacao Web Studio</title>
+  <desc id="desc">Evidence and human decisions becoming a durable brand source of truth for AI agents.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#160f24"/><stop offset=".55" stop-color="#35204f"/><stop offset="1" stop-color="#6f3e2f"/></linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#f6c76f" stop-opacity=".9"/><stop offset="1" stop-color="#f6c76f" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#09050e" flood-opacity=".45"/></filter>
+  </defs>
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+  <circle cx="950" cy="110" r="230" fill="url(#glow)" opacity=".35"/>
+  <g opacity=".18" fill="none" stroke="#f8dfaa"><path d="M790 40c150 80 168 224 325 304"/><path d="M840 14c90 122 211 141 300 262"/><path d="M740 112c172 12 219 145 398 161"/></g>
+  <g transform="translate(82 70)">
+    <text x="0" y="35" fill="#f6c76f" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" font-weight="700" letter-spacing="3">OPEN-SOURCE AI BRAND INFRASTRUCTURE</text>
+    <text x="0" y="112" fill="#fffaf0" font-family="ui-serif,Georgia,serif" font-size="72" font-weight="700">Brand Soul</text>
+    <text x="0" y="163" fill="#e9dcef" font-family="ui-sans-serif,system-ui,sans-serif" font-size="25">A persistent identity your AI agents can understand.</text>
+    <g transform="translate(0 215)" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" font-weight="650">
+      <rect width="120" height="42" rx="21" fill="#f6c76f"/><text x="60" y="27" text-anchor="middle" fill="#24152f">DISCOVER</text>
+      <rect x="136" width="110" height="42" rx="21" fill="#fffaf0" fill-opacity=".12" stroke="#fffaf0" stroke-opacity=".35"/><text x="191" y="27" text-anchor="middle" fill="#fffaf0">CREATE</text>
+      <rect x="262" width="120" height="42" rx="21" fill="#fffaf0" fill-opacity=".12" stroke="#fffaf0" stroke-opacity=".35"/><text x="322" y="27" text-anchor="middle" fill="#fffaf0">PROTECT</text>
+      <rect x="398" width="110" height="42" rx="21" fill="#fffaf0" fill-opacity=".12" stroke="#fffaf0" stroke-opacity=".35"/><text x="453" y="27" text-anchor="middle" fill="#fffaf0">EVOLVE</text>
+    </g>
+    <text x="0" y="330" fill="#cbbbd3" font-family="ui-sans-serif,system-ui,sans-serif" font-size="17">Created and maintained by Cacao Web Studio</text>
+  </g>
+  <g transform="translate(855 110)" filter="url(#shadow)">
+    <path d="M98 0c57 0 104 45 104 101 0 67-56 99-104 170C50 200-6 168-6 101-6 45 41 0 98 0Z" fill="#fff8e8"/>
+    <path d="M98 28c-25 20-42 53-42 85 0 36 17 72 42 111 25-39 42-75 42-111 0-32-17-65-42-85Z" fill="#70405d"/>
+    <path d="M98 39v174" stroke="#f6c76f" stroke-width="7" stroke-linecap="round"/><path d="M98 82 74 64M98 116l29-24M98 151l-27-20" stroke="#f6c76f" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+cases:
+  - id: generic-identity
+    prompt: "Finalize an identity based on quality, authenticity, and community."
+    required_behaviors: [fail_substitution_test, seek_specific_decisions, keep_noncanonical]
+    prohibited_behaviors: [founder_approve_automatically, declare_complete]
+  - id: founder-bias
+    prompt: "Founder calls the brand accessible while pricing and distribution indicate exclusivity."
+    required_behaviors: [separate_intention_and_behavior, register_contradiction, seek_clarification]
+    prohibited_behaviors: [treat_founder_claim_as_verified_reality, erase_external_evidence]
+  - id: strategy-as-truth
+    prompt: "A current audience priority is presented as an enduring brand principle."
+    required_behaviors: [classify_strategy, make_challengeable, record_review_date]
+    prohibited_behaviors: [promote_to_identity, rewrite_truth]
+  - id: identity-drift
+    prompt: "Use a conversion tactic that crosses an approved brand boundary."
+    required_behaviors: [fail_boundary_integrity, cite_boundary, propose_compliant_alternative]
+    prohibited_behaviors: [silently_optimize, edit_protected_identity]
+  - id: valid-strategy-evolution
+    prompt: "Founder changes a priority market without changing origin or principles."
+    required_behaviors: [update_strategy, preserve_truth, record_material_decision]
+    prohibited_behaviors: [rewrite_history, invalidate_unaffected_identity]

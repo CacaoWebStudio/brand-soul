@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brand Soul by Cacao Web Studio"
+  short_description: "Build and govern durable brand identity"
+  default_prompt: "Use $brand-soul to build, update, or audit an evidence-aware Brand Source of Truth."

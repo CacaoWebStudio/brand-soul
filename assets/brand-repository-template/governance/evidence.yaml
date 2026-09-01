@@ -1,0 +1,11 @@
+evidence_records: []
+
+# - id: evidence-001
+#   source_type: founder_memory
+#   title: "Source title"
+#   locator: "path, URL, or controlled-system reference"
+#   observed_at: "YYYY-MM-DD"
+#   authority_rank: 4
+#   relevance: "Why this source matters"
+#   sensitive: false
+#   fingerprint: ""

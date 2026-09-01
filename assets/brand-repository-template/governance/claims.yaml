@@ -1,0 +1,11 @@
+claims: []
+
+# - id: claim-001
+#   claim: "Exact governed claim"
+#   category: origin
+#   permission: unresolved
+#   approved_wording: []
+#   required_qualifiers: []
+#   prohibited_extensions: []
+#   evidence_ids: []
+#   review_by: "YYYY-MM-DD"
