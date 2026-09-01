@@ -131,7 +131,7 @@ Opt into a non-interactive update for a trusted scheduler or startup task:
 python3 scripts/update_skill.py --auto
 ```
 
-The updater requires a clean Git clone of the official repository, fetches only published release tags, and uses a fast-forward merge. It refuses dirty installations, unofficial remotes, divergent history, and automatic major-version upgrades. Start a new agent session after updating so the new instructions are loaded.
+The updater requires a clean Git clone of the official repository, targets the tag attached to the latest published stable release, and uses a fast-forward merge. It refuses dirty installations, unofficial remotes, divergent history, and automatic major-version upgrades. Start a new agent session after updating so the new instructions are loaded.
 
 For reproducible projects, keep a version pinned and update deliberately. To receive GitHub notifications, select **Watch → Custom → Releases** on this repository.
 
