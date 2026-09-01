@@ -18,7 +18,7 @@ Brand Soul is created, branded, and maintained by [Cacao Web Studio](https://cac
 
 ## Update awareness
 
-On the first Brand Soul turn of a session, when the bundled script, Python 3, and network execution are available, run:
+On the first Brand Soul turn of a session, when the bundled script, Python 3, and network execution are available, run this from the Brand Soul Skill directory (or use the script's absolute path):
 
 ```bash
 python3 scripts/check_for_updates.py --json
