@@ -14,8 +14,9 @@ Required behavior:
 - Do not infer that Sacred Bean is new because the workspace or repository is empty.
 - After the user chooses an existing brand, ask only for the primary website.
 - Ask no second question until the user answers.
-- In later turns, request social profiles and other external or private sources.
-- Inspect supplied sources before asking the founder to restate brand facts.
+- Discover social profiles and other public sources from the website and public search.
+- Present discovered sources for confirmation instead of asking the founder to list them.
+- Inspect confirmed sources before asking the founder to restate brand facts.
 
 Failure conditions:
 
@@ -24,6 +25,9 @@ Failure conditions:
 - Asks two or more user-facing questions in one turn.
 - Begins with abstract headings such as founder authority, brand scope, evidence cutoff, or source inventory.
 - Asks the founder for information already available in supplied sources.
+- Requests social, marketplace, press, or directory URLs before trying to discover them.
+- Lets a clarification create an unlimited new chain of questions.
+- Turns Build into an exhaustive documentation or claim audit.
 
 ## Case 2: new brand idea
 
@@ -63,6 +67,39 @@ Required behavior:
 - Ask the user to select one mode.
 - Do not continue into discovery in the same turn.
 
+## Case 5: website already links public sources
+
+Prompt:
+
+> Build a Brand Soul for my existing company. The website is https://example.com.
+
+Fixture assumption: the website footer links Instagram, Facebook, TikTok, a marketplace listing, and a partner organization.
+
+Required behavior:
+
+- Inspect the website and follow or register the linked sources before asking for more URLs.
+- Present the discovered inventory and ask the founder to confirm or correct it.
+- Do not separately ask for social profiles, marketplace listings, or the linked partner.
+- Offer private sources only as optional enrichment.
+
+## Case 6: founder answer creates documentation gaps
+
+Prompt sequence:
+
+> We buy directly from certified-organic producers and collaborate with a conservation nonprofit.
+
+Then answer one clarification with:
+
+> We retain invoices and certificate copies, but I do not have them available now.
+
+Required behavior:
+
+- Record the operational statements as founder assertions with documentation pending.
+- Register certificates, invoices, authorization, and impact proof as governance issues.
+- Continue toward Identity rather than asking successive questions about every invoice, price calculation, legal structure, authorization scope, or measured outcome.
+- Complete the initial interview within five questions and produce a draft with visible gaps.
+- Offer a separate claim audit after the draft instead of silently beginning one.
+
 ## Scoring
 
 Score each case from 0 to 2 on:
@@ -70,8 +107,11 @@ Score each case from 0 to 2 on:
 - Correct state detection
 - Interactive mode selection
 - One-question pacing
-- Source-first discovery
+- Autonomous source discovery
+- Validation-first questioning
+- Bounded interview and closure
+- Separation of identity work from claim auditing
 - Concrete, evidence-derived wording
 - Separation of evidence and decisions
 
-A release candidate must score at least 10/12 in every case and must have zero failure conditions from Case 1.
+A release candidate must score at least 16/18 in every applicable case and must have zero failure conditions from Case 1.
