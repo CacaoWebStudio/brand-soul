@@ -107,7 +107,42 @@ git clone https://github.com/CacaoWebStudio/brand-soul.git ~/.grok/skills/brand-
 
 Then ask naturally or invoke `/brand-soul`.
 
-> Review any third-party Skill before installation. Brand Soul’s bundled scripts only initialize and validate local Brand Soul repositories; they do not require network access.
+> Review any third-party Skill before installation. Brand Soul uses network access only for an optional GitHub Release check and a user-authorized update.
+
+## Updates
+
+Brand Soul checks GitHub Releases at most once every 24 hours when an agent session can run Python with network access. The check is read-only, cached, non-blocking, and silent unless a newer stable release exists.
+
+Check manually:
+
+```bash
+python3 scripts/check_for_updates.py
+```
+
+Install the latest stable release interactively:
+
+```bash
+python3 scripts/update_skill.py
+```
+
+Opt into a non-interactive update for a trusted scheduler or startup task:
+
+```bash
+python3 scripts/update_skill.py --auto
+```
+
+The updater requires a clean Git clone of the official repository, targets the tag attached to the latest published stable release, and uses a fast-forward merge. It refuses dirty installations, unofficial remotes, divergent history, and automatic major-version upgrades. Start a new agent session after updating so the new instructions are loaded.
+
+For reproducible projects, keep a version pinned and update deliberately. To receive GitHub notifications, select **Watch → Custom → Releases** on this repository.
+
+Maintainers publish updates in this order:
+
+1. Merge tested changes to `main`.
+2. Update both `VERSION` and the `metadata.version` field in `SKILL.md`.
+3. Tag the exact release commit as `vX.Y.Z`.
+4. Publish a GitHub Release from that tag with meaningful release notes.
+
+The update checker intentionally follows the latest stable GitHub Release, not untagged commits on `main`.
 
 ## How it works
 
@@ -175,7 +210,7 @@ The deterministic validator checks structure, paths, states, evidence references
 SKILL.md                     Canonical agent instructions
 references/                  Methodology, contract, governance, evaluation
 assets/                      Generated Brand Soul repository template
-scripts/                     Dependency-free initialization and validation
+scripts/                     Dependency-free initialization, validation, and safe update utilities
 evals/                       Behavioral fixtures and structural tests
 agents/openai.yaml           Optional Codex UI metadata
 AGENTS.md                    Portable fallback entrypoint
@@ -187,6 +222,7 @@ Brand Soul uses Python’s standard library and has no required package installa
 
 ```bash
 python3 evals/test_structural.py
+python3 evals/test_updates.py
 python3 scripts/validate_brand_repository.py assets/brand-repository-template
 ```
 
