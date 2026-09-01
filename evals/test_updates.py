@@ -21,6 +21,8 @@ class UpdateCheckTests(unittest.TestCase):
         self.assertEqual(check_for_updates.parse_version("2.0.0"), (2, 0, 0))
         with self.assertRaises(ValueError):
             check_for_updates.parse_version("latest")
+        with self.assertRaises(ValueError):
+            check_for_updates.parse_version("1.2.0-beta.1")
 
     def test_fresh_cache_avoids_network(self):
         with tempfile.TemporaryDirectory() as directory:
