@@ -3,6 +3,7 @@
 ## Contents
 
 - State detection
+- Conversational discovery
 - Evidence hierarchy
 - Discovery
 - Existing-brand excavation
@@ -15,6 +16,22 @@
 Assess three independent fields: maturity (`new`, `emerging`, `existing`), evidence coverage (`sparse`, `partial`, `substantial`), and identity coherence (`undefined`, `inconsistent`, `coherent`). Reassess after material evidence changes.
 
 For existing brands, excavate before inventing. For emerging brands, locate real signals before proposing coherence. For new brands, facilitate conscious choices rather than generating a mission, values, tone, and audience from a short prompt.
+
+Repository state is not brand state. An empty workspace, a new repository, or no local evidence must never cause an existing brand to be classified as new. Determine maturity from the user's explicit selection and brand evidence.
+
+## Conversational discovery
+
+Use progressive elicitation for every user-facing Build workflow:
+
+1. Present operating modes through the host's interactive choice tool when available. Include separate choices for an existing brand and a new brand idea.
+2. Ask exactly one question per turn and wait for the answer. Keep prior answers in working context and evaluate them together after source review; do not treat them as isolated decisions.
+3. For an existing brand, ask for its primary website first. Then request official social profiles in the next turn, followed in later turns by marketplace, retailer, directory, press, review, app-store, and relevant private sources.
+4. Inspect supplied sources before conducting the founder interview. Do not ask the founder to restate reliable information that can be extracted from those sources.
+5. Ask about scope, authority, chronology, or evidence handling only when the answer is not already clear or would materially change the repository.
+6. Translate internal epistemic categories into concrete human questions. Do not expose labels such as “fact claim,” “source inventory,” or “evidence cutoff” as abstract questionnaire headings.
+7. After source review, show a concise evidence brief and ask one targeted question at a time about a specific gap, contradiction, costly choice, or interpretation.
+
+If the host lacks an interactive choice tool, use a short numbered fallback. Never imitate a control with a long Markdown questionnaire.
 
 ## Evidence hierarchy
 
@@ -56,11 +73,11 @@ Build a chronology, identify constants and strategic eras, then classify histori
 
 ## Founder interview
 
-Ask three to five related questions per round. For each question, state the evidence or gap that prompted it and whether it seeks a fact, memory, interpretation, Identity decision, or Strategy decision.
+Ask exactly one question per turn. State the concrete evidence, contradiction, or gap that prompted it in ordinary language, then wait for the answer. Internally classify the answer as fact, memory, interpretation, Identity decision, or Strategy decision without making the founder navigate those categories.
 
 Prefer concrete prompts about episodes, costs, rejected alternatives, skeptical counterexamples, and hard choices. Test claimed principles by asking what growth or convenience the founder would sacrifice. Test retrospective stories by asking what was documented or believed at the time.
 
-After each round, return candidate records for correction. Do not infer approval from silence. End when critical protected sections are decision-ready rather than after a fixed questionnaire.
+Accumulate answers across the interview and periodically return candidate records for correction when a coherent set is ready. Do not infer approval from silence. End when critical protected sections are decision-ready rather than after a fixed questionnaire.
 
 When founder intention conflicts with behavior or evidence: state both propositions, classify the conflict, compare authority and dates, request clarification or support, and record the result as resolved, intentionally plural, or unresolved. Never polish the conflict away.
 
