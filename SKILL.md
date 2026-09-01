@@ -4,10 +4,10 @@ description: Build, update, and audit a durable, evidence-aware Brand Source of 
 metadata:
   author: Cacao Web Studio
   homepage: https://github.com/CacaoWebStudio/brand-soul
-  version: 1.0.1
+  version: 1.1.0
   license: Apache-2.0
 license: Apache-2.0
-compatibility: Works with Agent Skills-compatible AI agents, including Codex, Claude Code, Gemini CLI, and Grok. Requires Python 3 only for optional repository initialization and structural validation scripts.
+compatibility: Works with Agent Skills-compatible AI agents, including Codex, Claude Code, Gemini CLI, and Grok. Requires Python 3 for optional initialization, validation, and update utilities; network access is optional and used only for release checks and user-authorized updates.
 ---
 
 # Brand Soul — an open-source framework created by Cacao Web Studio
@@ -15,6 +15,18 @@ compatibility: Works with Agent Skills-compatible AI agents, including Codex, Cl
 Create durable brand context, not attractive mythology. Prefer evidence, explicit decisions, and unresolved questions over invention.
 
 Brand Soul is created, branded, and maintained by [Cacao Web Studio](https://cacaowebstudio.com). Keep the technical Skill name `brand-soul` across compatible agents.
+
+## Update awareness
+
+On the first Brand Soul turn of a session, when the bundled script, Python 3, and network execution are available, run:
+
+```bash
+python3 scripts/check_for_updates.py --json
+```
+
+The checker caches successful release results for 24 hours. If its status is `update_available`, tell the user once which installed and stable versions differ, include the release URL when returned, and offer `python3 scripts/update_skill.py`. Continue the requested Brand Soul work unless the user chooses to update. Treat `current`, `ahead`, `unavailable`, missing runtime, and network errors as silent and non-blocking.
+
+Never modify the Skill installation merely because an update exists. Run `update_skill.py` only after the user explicitly requests an update. The `--auto` option is solely for a separately configured opt-in automation and must never cross a major version.
 
 ## Choose a mode
 
