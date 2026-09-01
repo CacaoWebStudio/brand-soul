@@ -54,6 +54,19 @@ Read `references/methodology.md` for Build. Read `references/governance.md` for 
 9. Do not complete protected Identity if its central description could belong unchanged to a plausible competitor.
 10. Surface material contradictions. Never resolve them through polished wording.
 
+## Discovery versus execution
+
+Brand Soul discovers and represents what the brand is, believes, intends, repeatedly expresses, and has not yet resolved. A weak, aspirational, disputed, or poorly substantiated area is a valid discovery outcome, not an interview failure.
+
+During Build:
+
+- identify claims and classify their current support without trying to make every claim publication-ready;
+- preserve founder belief, intention, and Identity even when they are not objective proof;
+- place weak claims, missing evidence, and future attention areas in `governance/claims.yaml` and `governance/issues.yaml`;
+- do not ask a validation question solely to remove a downstream execution risk.
+
+When a later Skill creates ads, SEO, sales copy, packaging, public content, or operational changes, that executing Skill must read claims and issues. If it needs an `unresolved`, `expired`, or insufficiently supported claim, it must verify, qualify, omit, or request evidence at that moment. Do not force Brand Soul discovery to pre-audit every possible future use.
+
 ## Build workflow
 
 1. Use interactive mode selection to determine whether the user is building for an existing brand or a new brand idea. Do not infer this from the workspace.
@@ -66,9 +79,9 @@ Read `references/methodology.md` for Build. Read `references/governance.md` for 
 8. Separate interview needs into three priorities:
    - **Identity-critical**: information required to distinguish purpose, audience, principles, boundaries, voice, origin, and consequential choices. Ask these.
    - **Material contradiction**: a conflict that would substantially change Identity or make a central public statement unsafe. Ask only the highest-impact items.
-   - **Claim substantiation**: certificates, invoices, authorization records, price calculations, legal structures, impact proof, and similar documentation. Record these in `governance/issues.yaml`; do not turn Build into a claim audit unless the user requests one.
+   - **Execution readiness**: certificates, invoices, authorization records, price calculations, legal structures, impact proof, and similar documentation needed before a future public use. Record the claim permission and an issue; do not ask about it during Build unless the answer would change the Brand Soul itself or the user requests a claim audit.
 9. Plan at most five initial founder questions from the first two priorities. Ask one concrete question per turn. Prefer a proposed finding plus confirmation over asking the founder to reconstruct information already found. A follow-up replaces a remaining question and does not expand the budget.
-10. Treat a sufficient answer as closed. Do not recursively demand narrower proof, provenance, authorization scope, or documentation. When support remains incomplete, preserve the founder assertion and its limits, register an issue, and continue.
+10. Treat a sufficient answer about Identity, belief, intention, or lived practice as closed. Do not recursively demand narrower proof, provenance, authorization scope, or documentation. When objective support remains incomplete, preserve the founder assertion in the appropriate epistemic category, set the claim's execution permission, register an attention issue, and continue.
 11. After five questions or sooner when Identity is decision-ready, synthesize and present a draft. Keep unresolved operational claims visible without blocking a `draft` or `usable_with_gaps` repository. Ask additional questions only after the user reviews the draft and explicitly opts into another pass.
 12. For new brands, gather business reality within the same five-question initial budget, then propose two or three materially different directions with costs and boundaries; require the founder to choose or reject them.
 13. Preserve each answer as a fact claim, memory, interpretation, Identity decision, or Strategy decision without exposing internal classifications in the interview.
