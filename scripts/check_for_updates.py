@@ -17,7 +17,7 @@ from typing import Any
 RELEASE_API = "https://api.github.com/repos/CacaoWebStudio/brand-soul/releases/latest"
 CACHE_TTL_SECONDS = 24 * 60 * 60
 SKILL_ROOT = Path(__file__).resolve().parent.parent
-VERSION_PATTERN = re.compile(r"^v?(\d+)\.(\d+)\.(\d+)(?:[-+][0-9A-Za-z.-]+)?$")
+VERSION_PATTERN = re.compile(r"^v?(\d+)\.(\d+)\.(\d+)$")
 
 
 def parse_version(value: str) -> tuple[int, int, int]:
