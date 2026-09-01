@@ -82,11 +82,11 @@ Before asking anything, rank gaps by whether the answer will materially change p
 2. Material contradictions that alter Identity or the safe wording of a central claim
 3. Operational substantiation such as certificates, invoices, pricing records, authorization documents, legal structures, and impact measurement
 
-Ask from the first two groups within a five-question initial budget. Put the third group in the issue register unless the user explicitly requests a claim audit.
+Ask from the first two groups within a five-question initial budget. Put the third group in the claim and issue registers unless the user explicitly requests a claim audit. Brand Soul may legitimately conclude that a meaningful part of the brand is aspirational, weakly evidenced, disputed, or not yet ready for unrestricted public use. Map that weakness; do not interrogate it out of existence.
 
 Ask one question per turn. Prefer confirming or correcting a proposed interpretation derived from evidence. Internally classify the answer as fact, memory, interpretation, Identity decision, or Strategy decision without making the founder navigate those categories.
 
-Treat a sufficient answer as closure for the Build pass. Do not recursively decompose it into progressively narrower questions about proof or scope. When a statement remains founder-asserted rather than independently verified, record that status and continue.
+Treat a sufficient answer about the brand's Identity, belief, intention, or lived practice as closure for the Build pass. Do not recursively decompose it into progressively narrower questions about proof or scope. When a statement remains founder-asserted rather than independently verified, record that status, assign a downstream claim permission where relevant, and continue.
 
 Prefer concrete prompts about episodes, costs, rejected alternatives, skeptical counterexamples, and hard choices when they are needed to distinguish Identity. Test claimed principles only when the result would predict a consequential choice.
 
