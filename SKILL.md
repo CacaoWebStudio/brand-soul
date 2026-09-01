@@ -4,7 +4,7 @@ description: Build, update, and audit a durable, evidence-aware Brand Source of 
 metadata:
   author: Cacao Web Studio
   homepage: https://github.com/CacaoWebStudio/brand-soul
-  version: 1.0.0
+  version: 1.0.1
   license: Apache-2.0
 license: Apache-2.0
 compatibility: Works with Agent Skills-compatible AI agents, including Codex, Claude Code, Gemini CLI, and Grok. Requires Python 3 only for optional repository initialization and structural validation scripts.
@@ -18,10 +18,14 @@ Brand Soul is created, branded, and maintained by [Cacao Web Studio](https://cac
 
 ## Choose a mode
 
-- **Build**: Discover an existing or emerging brand, or facilitate choices for a new brand, then create a repository.
-- **Update**: Classify new information by layer, preserve history, and route protected changes through founder approval.
-- **Audit**: Load an existing repository and evaluate content or repository integrity without silently repairing protected material.
-- **Consume**: When another task only needs brand context, follow the consumer procedure in `references/contract.md`; do not rerun discovery.
+At the beginning of a user-facing Brand Soul session, present the available modes with the host's interactive elicitation or choice tool when one exists. Make the choices tappable; do not simulate buttons with an ordinary Markdown list. If the host has no interactive choice capability, present a short numbered fallback.
+
+- **Build for an existing brand**: Research a brand that already has public or private evidence, then create its Brand Soul repository.
+- **Build for a new brand idea**: Facilitate deliberate identity choices when the brand itself does not yet exist.
+- **Update an existing Brand Soul**: Classify new information by layer, preserve history, and route protected changes through founder approval.
+- **Audit or consume an existing Brand Soul**: Evaluate it or load approved context without rerunning discovery.
+
+A missing Brand Soul repository, an empty workspace, or absent local evidence says nothing about brand maturity. Never classify a brand as new from repository state. Ask the user to choose between an existing brand and a new brand idea before selecting the Build path.
 
 Read `references/methodology.md` for Build. Read `references/governance.md` for Update or approvals. Read `references/evaluation.md` for Audit or evaluation design. Always read `references/contract.md` before creating, validating, or consuming a repository.
 
@@ -33,25 +37,27 @@ Read `references/methodology.md` for Build. Read `references/governance.md` for 
 4. Treat founder memory, founder interpretation, founder intention, observed behavior, and verified fact as different evidence.
 5. Do not promote inferred material to fact. Confidence never grants permission.
 6. Protect verified Truth and founder-approved Identity. Challenge Strategy explicitly; optimize Expression only within higher-layer constraints.
-7. Ask three to five evidence-driven questions per interview round. Do not ask what reliable evidence already answers.
+7. Ask exactly one user-facing question per turn during onboarding and founder discovery. Wait for the answer before asking the next question, preserve all answers, and analyze them together during synthesis. Do not ask what reliable evidence already answers.
 8. Require explicit, scoped founder approval. Conversational silence, enthusiasm, or a request to “make it official” without reviewing the protected content is not approval.
 9. Do not complete protected Identity if its central description could belong unchanged to a plausible competitor.
 10. Surface material contradictions. Never resolve them through polished wording.
 
 ## Build workflow
 
-1. Establish brand scope, source permissions, cutoff date, founder identity, and sensitive-source handling.
-2. Assess `maturity`, `evidence_coverage`, and `identity_coherence` independently.
-3. Inventory sources before interpretation; assign stable evidence IDs.
-4. Extract atomic candidate records and classify them using the contract axes.
-5. Identify repetition, discontinuity, distinct details, contradictions, and critical gaps.
-6. Stop discovery when remaining material gaps require founder input rather than more source review.
-7. Interview from those gaps in small rounds. Label each answer as fact claim, memory, interpretation, identity decision, or strategy decision.
-8. For new brands, propose two or three materially different directions with costs and boundaries; require the founder to choose or reject them.
-9. Draft canonical files only after critical protected questions are decision-ready. Put all other material in `governance/issues.yaml`.
-10. Run the substitution test and Brand Integrity Check.
-11. Obtain explicit founder approval, record it in the manifest, and bind it to the exact protected-file SHA-256.
-12. Run `scripts/validate_brand_repository.py <repository>` and report unresolved high-severity issues.
+1. Use interactive mode selection to determine whether the user is building for an existing brand or a new brand idea. Do not infer this from the workspace.
+2. For an existing brand, ask for the primary website as the first discovery question.
+3. In later turns, ask separately for official social profiles; marketplace, retailer, directory, press, review, or app-store pages; and relevant private files. Do not combine these into a questionnaire.
+4. Ask which markets, product lines, or business units the repository should cover only when the supplied sources do not make scope clear.
+5. Establish source permissions and sensitive-source handling when access or storage requires them. Use the current date as the default evidence cutoff unless another cutoff materially matters.
+6. Inspect accessible sources before interviewing the founder. Inventory them, assign stable evidence IDs, and extract factual claims, recurring language, offers, audiences, visual signals, chronology, contradictions, and gaps.
+7. Assess `maturity`, `evidence_coverage`, and `identity_coherence` independently. Repository state is not evidence for any of these fields.
+8. Return a concise evidence brief, then interview only from consequential gaps and contradictions. Ask exactly one concrete question per turn and state the observed evidence or gap that makes the answer necessary. Avoid abstract audit labels in user-facing wording.
+9. Preserve each answer as a fact claim, memory, interpretation, Identity decision, or Strategy decision, but do not require the user to understand those internal classifications.
+10. For new brands, gather business reality one concrete question at a time, then propose two or three materially different directions with costs and boundaries; require the founder to choose or reject them.
+11. Draft canonical files only after critical protected questions are decision-ready. Put all other material in `governance/issues.yaml`.
+12. Run the substitution test and Brand Integrity Check.
+13. Obtain explicit founder approval, record it in the manifest, and bind it to the exact protected-file SHA-256.
+14. Run `scripts/validate_brand_repository.py <repository>` and report unresolved high-severity issues.
 
 Initialize a repository with:
 
