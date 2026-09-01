@@ -86,7 +86,7 @@ def main() -> int:
         git("fetch", "origin", "--tags", "--prune")
         git("rev-parse", "--verify", f"refs/tags/{tag}^{{commit}}")
     except subprocess.CalledProcessError:
-        return fail(f"the signed release target {tag} was not found in the official repository.")
+        return fail(f"the release target {tag} was not found in the official repository.")
 
     ancestor = git("merge-base", "--is-ancestor", "HEAD", f"refs/tags/{tag}", check=False)
     if ancestor.returncode != 0:
