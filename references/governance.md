@@ -32,7 +32,11 @@ Approval must identify the exact material, founder, timestamp, and file hash. An
 
 Make factual records atomic and evidence-linked. A record cannot be `verified` with no evidence, `inferred` and approved as fact, `outdated` and current, or materially contradicted without an open issue.
 
-Claims govern repeatability rather than legal compliance. Use `qualified_only` when evidence supports a narrower statement. Treat health, environmental, cultural, performance, community, certification, and quantified claims as higher risk. Do not strengthen approved wording by paraphrase.
+Claims govern downstream repeatability rather than requiring Brand Soul Build to perform a legal or documentary audit. Use `qualified_only` when evidence supports a narrower statement. Treat health, environmental, cultural, performance, community, certification, and quantified claims as higher risk. Do not strengthen approved wording by paraphrase.
+
+Build may leave claims `unresolved`, `qualified_only`, or `prohibited` while still producing a useful Brand Soul. Record what the brand believes or intends in the appropriate Identity or interpretation layer without presenting it as verified fact. Missing substantiation is an attention area for future use, not automatically a founder-interview question.
+
+The Skill that executes public work owns point-of-use validation. Before using a governed claim in ads, SEO, sales, packaging, content, or another external action, it must check permission, evidence, qualifiers, prohibited extensions, currency, and open issues. It must verify, qualify, omit, or ask for evidence then; it must not silently upgrade an unresolved Brand Soul statement into a usable public claim.
 
 ## Contradictions
 
