@@ -4,7 +4,7 @@ description: Build, update, and audit a durable, evidence-aware Brand Source of 
 metadata:
   author: Cacao Web Studio
   homepage: https://github.com/CacaoWebStudio/brand-soul
-  version: 1.2.0
+  version: 1.3.0
   license: Apache-2.0
 license: Apache-2.0
 compatibility: Works with Agent Skills-compatible AI agents, including Codex, Claude Code, Gemini CLI, and Grok. Requires Python 3 for optional initialization, validation, and update utilities; network access is optional and used only for release checks and user-authorized updates.
@@ -74,20 +74,21 @@ When a later Skill creates ads, SEO, sales copy, packaging, public content, or o
 3. Before asking for more URLs, inspect the website's navigation, footer, contact and about pages, structured data, sitemap, and outbound links. Search the public web for official social profiles, marketplaces, retailers, directories, press, reviews, and app-store pages associated with the brand.
 4. Present the discovered source inventory for confirmation through tappable choices when available: **Correct**, **Add or correct sources**, or **Use only selected sources**. Ask the user to supply links only when discovery failed or the user says something is missing.
 5. Offer private materials as optional supporting evidence after public research; do not make them a prerequisite for drafting.
-6. Inspect accessible sources, assign stable evidence IDs, and extract factual claims, recurring language, offers, audiences, visual signals, chronology, contradictions, and gaps.
-7. Assess `maturity`, `evidence_coverage`, and `identity_coherence` independently. Repository state is not evidence for any of these fields.
-8. Separate interview needs into three priorities:
+6. Inspect accessible sources, assign stable evidence IDs, and extract factual claims, recurring language, offers, audiences, visual signals, chronology, contradictions, and gaps. For a product brand, this must include a **Product Reality Inventory**: enumerate every discoverable collection, product page, variant or format, and current offer. For each, capture only observed data: name, format, size or quantity, ingredients or composition, intended use, availability or market, explicit product claims, and source URL. Do not infer missing product details from another SKU.
+7. Present the Product Reality Inventory for one confirmation before founder discovery: **Catalog is correct**, **Correct this catalog**, or **A product is missing**. Do not ask separate questions for products already discoverable from product pages. A missing page, unclear product detail, or unsupported claim becomes an inventory gap or governed claim, not an interview branch.
+8. Assess `maturity`, `evidence_coverage`, and `identity_coherence` independently. Repository state is not evidence for any of these fields.
+9. Separate interview needs into three priorities:
    - **Identity-critical**: information required to distinguish purpose, audience, principles, boundaries, voice, origin, and consequential choices. Ask these.
    - **Material contradiction**: a conflict that would substantially change Identity or make a central public statement unsafe. Ask only the highest-impact items.
    - **Execution readiness**: certificates, invoices, authorization records, price calculations, legal structures, impact proof, and similar documentation needed before a future public use. Record the claim permission and an issue; do not ask about it during Build unless the answer would change the Brand Soul itself or the user requests a claim audit.
-9. Plan at most five initial founder questions from the first two priorities. Ask one concrete question per turn. Prefer a proposed finding plus confirmation over asking the founder to reconstruct information already found. A follow-up replaces a remaining question and does not expand the budget.
-10. Treat a sufficient answer about Identity, belief, intention, or lived practice as closed. Do not recursively demand narrower proof, provenance, authorization scope, or documentation. When objective support remains incomplete, preserve the founder assertion in the appropriate epistemic category, set the claim's execution permission, register an attention issue, and continue.
-11. After five questions or sooner when Identity is decision-ready, synthesize and present a draft. Keep unresolved operational claims visible without blocking a `draft` or `usable_with_gaps` repository. Ask additional questions only after the user reviews the draft and explicitly opts into another pass.
-12. For new brands, gather business reality within the same five-question initial budget, then propose two or three materially different directions with costs and boundaries; require the founder to choose or reject them.
-13. Preserve each answer as a fact claim, memory, interpretation, Identity decision, or Strategy decision without exposing internal classifications in the interview.
-14. Run the substitution test and Brand Integrity Check.
-15. Obtain explicit founder approval, record it in the manifest, and bind it to the exact protected-file SHA-256.
-16. Run `scripts/validate_brand_repository.py <repository>` and report unresolved high-severity issues.
+10. Plan at most five initial founder questions from the first two priorities. Ask one concrete question per turn. Prefer a proposed finding plus confirmation over asking the founder to reconstruct information already found. A follow-up replaces a remaining question and does not expand the budget.
+11. Treat a sufficient answer about Identity, belief, intention, or lived practice as closed. Do not recursively demand narrower proof, provenance, authorization scope, or documentation. When objective support remains incomplete, preserve the founder assertion in the appropriate epistemic category, set the claim's execution permission, register an attention issue, and continue.
+12. After five questions or sooner when Identity is decision-ready, synthesize and present a draft. Keep unresolved operational claims visible without blocking a `draft` or `usable_with_gaps` repository. Ask additional questions only after the user reviews the draft and explicitly opts into another pass.
+13. For new brands, gather business reality within the same five-question initial budget, then propose two or three materially different directions with costs and boundaries; require the founder to choose or reject them.
+14. Preserve each answer as a fact claim, memory, interpretation, Identity decision, or Strategy decision without exposing internal classifications in the interview.
+15. Run the substitution test and Brand Integrity Check, including a catalog coverage check for product brands.
+16. Obtain explicit founder approval, record it in the manifest, and bind it to the exact protected-file SHA-256.
+17. Run `scripts/validate_brand_repository.py <repository>` and report unresolved high-severity issues.
 
 Initialize a repository with:
 
