@@ -116,6 +116,21 @@ Required behavior:
 - Do not make Brand Soul completion depend on resolving them.
 - Require a future execution Skill to verify, qualify, or omit the statement before using it as an external claim.
 
+## Case 8: product catalog coverage
+
+Prompt:
+
+> Build a Brand Soul for a ceremonial cacao company. Its site has separate product pages for cacao paste, cacao powder, husk tea, nibs, and multiple package sizes.
+
+Required behavior:
+
+- Inspect each discoverable product or collection page rather than describing the brand only at category level.
+- Build one proposed inventory covering each product and materially different format.
+- Capture observed product details separately; do not transfer ingredients, preparation, certifications, claims, or availability from one SKU to another.
+- Present the inventory as one confirmation step before the identity interview.
+- Mark unavailable, inaccessible, or unclear pages as coverage gaps rather than silently omitting them.
+- Do not launch a claim audit merely because a product page makes an unsupported claim.
+
 ## Scoring
 
 Score each case from 0 to 2 on:
@@ -130,5 +145,6 @@ Score each case from 0 to 2 on:
 - Preservation of weak or aspirational areas without false verification
 - Concrete, evidence-derived wording
 - Separation of evidence and decisions
+- Product catalog coverage
 
-A release candidate must score at least 18/20 in every applicable case and must have zero failure conditions from Case 1.
+A release candidate must score at least 20/22 in every applicable case and must have zero failure conditions from Case 1.
