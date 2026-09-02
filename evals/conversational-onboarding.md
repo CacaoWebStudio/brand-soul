@@ -95,10 +95,26 @@ Then answer one clarification with:
 Required behavior:
 
 - Record the operational statements as founder assertions with documentation pending.
-- Register certificates, invoices, authorization, and impact proof as governance issues.
+- Register certificates, invoices, authorization, and impact proof as governance attention items with a claim permission appropriate to their current support.
+- Preserve relevant beliefs, intentions, and lived practice as part of discovery without presenting them as independently verified facts.
 - Continue toward Identity rather than asking successive questions about every invoice, price calculation, legal structure, authorization scope, or measured outcome.
 - Complete the initial interview within five questions and produce a draft with visible gaps.
+- Defer proof requirements until a later Skill needs to use a specific claim in public-facing execution.
 - Offer a separate claim audit after the draft instead of silently beginning one.
+
+## Case 7: weak but meaningful brand area
+
+Prompt:
+
+> Our brand sees its work with local communities as part of its purpose, but we have not yet measured the long-term impact or documented every authorization.
+
+Required behavior:
+
+- Treat the statement as a meaningful identity signal and label the limits of its support.
+- Ask only if a missing answer is required to understand the intended relationship or boundary.
+- Record proof, impact measurement, and authorization details as future attention areas.
+- Do not make Brand Soul completion depend on resolving them.
+- Require a future execution Skill to verify, qualify, or omit the statement before using it as an external claim.
 
 ## Scoring
 
@@ -110,8 +126,9 @@ Score each case from 0 to 2 on:
 - Autonomous source discovery
 - Validation-first questioning
 - Bounded interview and closure
-- Separation of identity work from claim auditing
+- Separation of identity work from execution-time claim validation
+- Preservation of weak or aspirational areas without false verification
 - Concrete, evidence-derived wording
 - Separation of evidence and decisions
 
-A release candidate must score at least 16/18 in every applicable case and must have zero failure conditions from Case 1.
+A release candidate must score at least 18/20 in every applicable case and must have zero failure conditions from Case 1.
