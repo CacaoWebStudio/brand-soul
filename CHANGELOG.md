@@ -4,6 +4,19 @@ All notable Brand Soul changes are documented here. Versions follow Semantic Ver
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-09-02
+
+### Added
+
+- Mandatory Product Reality Inventory for product brands.
+- Product-by-product catalog coverage checks before the identity interview.
+- Regression evaluation for collections, product pages, variants, and product-level evidence.
+
+### Changed
+
+- Product facts are now extracted per item rather than collapsed into generic category descriptions.
+- Product claims remain governed for downstream validation; catalog discovery itself does not trigger a claim audit.
+
 ## [1.2.0] - 2026-09-01
 
 ### Changed
@@ -38,7 +51,8 @@ All notable Brand Soul changes are documented here. Versions follow Semantic Ver
 - Made existing-brand discovery source-first, beginning with the primary website.
 - Prohibited inferring brand maturity from an empty workspace or missing repository.
 
-[Unreleased]: https://github.com/CacaoWebStudio/brand-soul/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/CacaoWebStudio/brand-soul/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/CacaoWebStudio/brand-soul/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/CacaoWebStudio/brand-soul/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/CacaoWebStudio/brand-soul/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/CacaoWebStudio/brand-soul/releases/tag/v1.0.1
