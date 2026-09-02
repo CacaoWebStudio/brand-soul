@@ -17,8 +17,10 @@
 4. Read open high-severity issues before generating brand-facing work.
 5. Load only the layers needed for the task, plus claims and relevant boundaries.
 6. Exclude outdated Strategy, prohibit unresolved claims as fact, and prohibit proposed Identity as canonical.
-7. Report invalid or insufficient context; never replace it with assumptions.
-8. Run the semantic integrity check before final output.
+7. When the requested execution needs a claim that is unresolved, expired, prohibited, or supported only more narrowly, verify it at point of use, apply its required qualification, omit it, or ask the user for the missing evidence. Never upgrade it silently.
+8. Treat open attention issues as instructions for downstream caution, not as proof that the Brand Soul itself is unusable.
+9. Report invalid or insufficient context; never replace it with assumptions.
+10. Run the semantic integrity check before final output.
 
 ## Required files
 
