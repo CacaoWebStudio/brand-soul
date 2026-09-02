@@ -6,6 +6,7 @@
 - Conversational discovery
 - Evidence hierarchy
 - Discovery
+- Product reality inventory
 - Existing-brand excavation
 - Founder interview
 - New-brand creation
@@ -69,6 +70,24 @@ Create an evidence brief containing:
 - Evidence-driven interview agenda
 
 Stop source review when additional material is repetitive and remaining critical gaps require a founder decision or firsthand clarification.
+
+## Product reality inventory
+
+For a product brand, do not collapse the catalog into a generic description such as “offers cacao products.” Traverse collections, product pages, variants, structured product data, product feeds when available, and linked retail pages. Build one inventory row per discoverable sellable item or materially different format.
+
+Record only what the source shows:
+
+- product name and collection;
+- format, size, quantity, or variant;
+- ingredients or composition;
+- stated intended use or preparation;
+- listed availability, market, or sales channel;
+- explicit product-level claims;
+- canonical source URL and observation date.
+
+Do not infer a product's composition, use, claim, certification, availability, or price from another product. Mark inaccessible, removed, ambiguous, or missing pages as coverage gaps.
+
+Before founder discovery, present the entire catalog as one proposed inventory and ask for a single correction or confirmation. Product-catalog confirmation is not a claim audit: unclear product claims remain governed claims for a later executing Skill to validate at point of use.
 
 ## Existing-brand excavation
 
